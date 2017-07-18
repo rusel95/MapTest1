@@ -18,7 +18,7 @@ class ViewController: UIViewController {
         
         mapView.setRegion(MKCoordinateRegionMakeWithDistance(CLLocationCoordinate2DMake(43.615239249280, -116.20365589857101), 500, 500), animated: true)
         
-        let pin = BSUAnnotation(title: "soasdfadsfxme title", subtitle: "some subasdvasdvcvtitle", coordinate: CLLocationCoordinate2DMake(43.61523, -116.20365))
+        let pin = BSUAnnotation(title: "soasdfadsfxme title", subtitle: "some subasdvasdvcvtitle", coordinate: CLLocationCoordinate2DMake(43.61, -116.20))
         
         mapView.addAnnotation( pin )
     }
