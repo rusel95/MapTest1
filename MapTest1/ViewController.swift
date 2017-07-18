@@ -7,12 +7,20 @@
 //
 
 import UIKit
+import MapKit
 
 class ViewController: UIViewController {
 
+    @IBOutlet weak var mapView: MKMapView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+        
+        mapView.setRegion(MKCoordinateRegionMakeWithDistance(CLLocationCoordinate2DMake(43.615239249280, -116.20365589857101), 500, 500), animated: true)
+        
+        let pin = BSUAnnotation(title: "soasdfadsfxme title", subtitle: "some subasdvasdvcvtitle", coordinate: CLLocationCoordinate2DMake(43.61523, -116.20365))
+        
+        mapView.addAnnotation( pin )
     }
 
     override func didReceiveMemoryWarning() {
